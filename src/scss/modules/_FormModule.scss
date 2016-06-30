@@ -1,0 +1,169 @@
+.form-items {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+
+	@include respond-to(bp-750){
+		margin-top: 2rem;
+	}
+
+	.form-item {
+		float: left;
+		padding-right: 1rem;
+		padding-left: 1rem;
+		margin-bottom: 1.8rem;
+
+		@include respond-to(bp-750){
+			padding-left: 0;
+		}
+
+		@include respond-to(small-screens){
+			padding: 0;
+		}
+
+		input, textarea {
+			@extend .good-headline;
+			@include base-short-transition;
+
+			box-shadow: inset 0 0 .5rem .3rem transparent;
+			border: 0;
+			width: 100%;
+			display: block;
+			height: 2.5em;
+			padding: .5em;
+			font-size: 1.3em;
+			background: $color-grey;
+			color: $color-lightgrey;
+
+			&:focus {
+				outline: none;
+				box-shadow: inset 0 0 .5rem .3rem $color-lightgrey;
+			}
+		}
+
+		input:-moz-placeholder { color: $color-lightgrey;}
+		input[placeholder] { color: $color-lightgrey; }
+		::-moz-placeholder { color: $color-lightgrey; } /* firefox 19+ */
+		input:-moz-placeholder { color: $color-lightgrey; }
+	
+		.textarea {
+			height: 10rem;
+		}
+
+		&.half {
+			width: 50%;
+
+			@include respond-to(small-screens) {
+				width: 100%;
+			}
+		}
+
+		&.full {
+			width: 100%;
+		}
+	}
+}
+
+.form-submit {
+	padding: 0 1rem;
+
+	@include respond-to(bp-750){
+		padding-left: 0;
+	}
+
+	@include respond-to(small-screens){
+		padding: 0;
+	}
+
+	.submit-btn {
+		@include base-short-transition;
+		@extend .good-headline;
+
+		border: .2rem solid $color-lightgrey;
+		background: transparent;
+		width: 100%;
+		padding: 1.2rem 2rem;
+		font-style: italic;
+		color: $color-lightgrey;
+		text-align: right;
+		font-size: 1.8rem;
+		font-weight: 900;
+
+		&:hover {
+			background: $color-lightred;
+			border: .2rem solid transparent;
+			color: $color-white;
+		}
+	}
+}
+
+.contact-form {
+	.h4 {
+		font-family: 'Tiempos-Medium';
+	    font-size: 2.4rem;
+	    color: $color-white;
+	    padding: 0 1rem;
+	    margin: 1rem 0 1.8rem;
+	}
+}
+
+.business-inquires {
+	padding: 0 1rem;
+	color: $color-white;
+
+	.h4 {
+		@include tiempos-medium;
+
+		font-size: 3rem;
+		padding: 0;
+		line-height: 4.8rem;
+		margin: 0;
+
+		@include respond-to(bp-750){
+			font-size: 2.4rem;
+			line-height: 3.2rem;
+		}
+
+		@include respond-to(small-screens){
+			font-size: 1.8rem;
+		}
+	}
+
+	.h5 {
+		@extend .good-headline;
+
+		color: $color-lightred;
+		margin-top: 5rem;
+		font-size: 2.4rem;
+		font-weight: 500;
+		text-transform: uppercase;
+
+		@include respond-to(bp-750){
+			font-size: 1.8rem;
+			margin-bottom: 0;
+		}
+
+		@include respond-to(small-screens){
+			font-size: 1.6rem;
+		}
+
+		@include respond-to(mh-700) {
+			margin-top: 2rem;
+		}
+	}
+
+	.copyright {
+		@extend .good-headline;
+
+		color: $color-lightgrey;
+		font-weight: 500;
+		font-size: 1.6rem;
+		margin-top: 6rem;
+
+		@include respond-to(small-screens){
+			font-size: 1.4rem;
+			margin-top: 3.2rem;
+		}
+	}
+}
+	

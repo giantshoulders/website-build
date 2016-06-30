@@ -1,0 +1,54 @@
+<div class="form-content">
+	<script language="JavaScript" src="/js/FormValidation.js" type="text/javascript"></script>
+	<form method="POST" class="Giant-Form" name="contactform" action="http://giantshoulders.co/_staging/contact-form-handler.php"> 
+		<ul class="form-items">
+			<li class="form-item half">
+				<input type="text" placeholder="First Name*" name="name">
+			</li>
+			<li class="form-item half">
+				<input type="text" placeholder="Last Name*" name="LastName">
+			</li>
+			<li class="form-item full">
+				<input type="text" placeholder="Email Address*" name="email">
+			</li>
+			<li class="form-item full">
+				<input name="subject" placeholder="Subject: Hello Giant Shoulders"></input>
+			</li>
+			<li class="form-item full">
+				<textarea name="message" class="textarea" rows="15" cols="0" placeholder="Message: We are looking forward to collaborating with you"></textarea>
+			</li>
+		</ul>
+		<div class="form-submit">
+			<input type="submit" class="submit-btn" value="whoosh..."><br>	
+		</div>
+		
+	</form>
+
+	<script language="JavaScript">
+	// Code for validating the form
+	// Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+	// for details
+	var frmvalidator  = new Validator("contactform");
+	frmvalidator.addValidation("name","req","Please provide your name"); 
+	frmvalidator.addValidation("email","req","Please provide your email"); 
+	frmvalidator.addValidation("email","email","Please enter a valid email address"); 
+	</script>
+
+
+	<div class="business-inquires">
+		<div class="col_l">
+			<h5 class="h5">
+				Business Inquries
+			</h5>
+			<h5 class="h4">
+				401 648 5908
+			</h5>
+		</div>
+
+		<div class="col_r {{#if HideCopyright}}d-n{{/if}}">
+			<p class="copyright">
+				{{{PageDetails.Description.copyright}}}
+			</p>
+		</div>
+	</div>
+</div>

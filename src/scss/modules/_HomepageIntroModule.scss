@@ -1,0 +1,250 @@
+.intro_section, .thankyou_section {
+	width: 100%;
+	height: 100%;
+	display: table;
+
+	.col_tr {
+		display: table-row;
+	}
+
+	.col_l {
+		width: 25%;
+		height: 100%;
+		float: left;
+		background: $color-white;
+		display: table;
+
+		@include respond-to(medium-screens) {
+			display: none;
+		}
+	}
+
+	.col_r {
+		width: 75%; 
+		float: left;
+		height: 100%;
+		background: $color-darkgrey;
+		display: table;
+
+		@include respond-to(medium-screens) {
+			width: 100%;
+		}
+
+		.background-pattern {
+			width: 75%;
+			height: 100%;
+			position: absolute;
+			pointer-events: none;
+			z-index: 0;
+
+			@include respond-to(medium-screens) {
+				margin-left: 33.33%;
+				width: 66.66%;
+			}
+
+			@include respond-to(bp-750) {
+				margin-left: 25%;
+				width: 75%;
+			}
+
+			&:before, &:after {
+				content: "";
+				width: 33.5%;
+				bottom: 7rem;
+				position: absolute;
+				background: $color-black;
+			}
+
+			&:before {
+				left: 0;
+				height: 25%;
+			}
+
+			&:after {
+				right: 0;
+				height: 75%;
+			}
+			
+			.pattern {
+				width: 33.5%;
+				height: 50%;
+				background: $color-black;
+				position: absolute;
+				bottom: 7rem;
+				left: 33%;
+				margin: 0 auto;
+			}
+			
+		}
+
+		.intro_content {
+			position: relative;
+			z-index: 1;
+			width: 100%;
+			height: 100%;
+			display: table;
+			padding-bottom: 7rem;
+
+			.intro_slider {
+				max-width: 42rem;
+				margin: 0 auto;
+				padding: 0;
+				display: table-cell;
+				vertical-align: middle;
+				padding: 0 5rem 0 10rem;
+
+				@include respond-to(bp-1280){
+					padding: 0 5rem 0 8rem;
+				}
+
+				@include respond-to(medium-screens){
+					padding: 0 5rem 0 6rem;
+				}
+
+				@include respond-to(small-screens){
+					padding: 0 5rem 0 4rem;
+				}
+
+				@include respond-to(bp-500){
+					max-width: 30rem;
+					padding: 0 2rem 0 2rem;
+				}
+			}
+
+			.content {
+				display: none;
+
+				&:focus {
+					outline: none;
+				}
+
+				.section_title {
+					@extend .good-headline;
+
+					font-size: 2rem;
+					text-transform: uppercase;
+					color: $color-lightgrey;
+					margin-bottom: 5rem;
+					font-weight: 500;
+
+					@include respond-to(medium-screens){
+						margin-bottom: 3rem;
+					}
+				}
+
+				.section_quote {
+					@include tiempos-semibold;
+
+					color: $color-white;
+					font-size: 7.4rem;
+					max-width: 87.5rem;
+					min-height: 28.8rem;
+
+					@include respond-to(bp-1280){
+						font-size: 6rem;
+						min-height: 23.5rem;	
+					}
+
+					@include respond-to(medium-screens){
+						font-size: 5.4rem;
+					}
+
+					@include respond-to(bp-750){
+						font-size: 4.4rem;
+					}
+
+					@include respond-to(bp-500){
+						font-size: 4rem;
+					}
+
+					@include respond-to(bp-375){
+						font-size: 3rem;
+					}
+				}
+
+				u {
+					@include tiempos-semibold;
+
+					position: relative;
+					text-decoration: none;
+				}
+
+				em {
+					@include tiempos-semibold-italic;
+				}
+
+				&.slick-active {
+					u {
+						&:after {
+							@include animation (2s, 1s, 1, redUnderline);
+							
+							content: "";
+							position: absolute;
+							bottom: -.3rem;
+							left: 0;
+							width: 0%;
+						}
+
+						&:nth-child(1) {
+							&:after {
+								@include animation (.8s, 1s, 1, redUnderline);
+							}
+						}
+
+						&:nth-child(2) {
+							&:after {
+								@include animation (1.8s, 1s, 1, redUnderline);
+							}
+						}
+
+						&:nth-child(3) {
+							&:after {
+								@include animation (2s, 1s, 1, redUnderline);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.thankyou_section {
+	.col_l {
+		background: $color-darkgrey;
+	}
+
+	.col_r {
+		background: $color-white;
+
+		.intro_content {
+			padding: 0 4rem 7rem;
+
+			.content {
+				display: table-cell;
+				vertical-align: middle;
+
+				.section_title {
+					color: $color-red;
+					margin-bottom: 2.8rem;
+				}
+
+				.section_quote {
+					color: $color-black;
+					height: auto !important;
+					min-height: auto !important;
+				}
+
+				.thank-you-message {
+					font-family: 'Tiempos-Medium';
+    				font-size: 3rem;
+    				max-width: 68rem;
+
+    				@include respond-to(bp-500) {
+    					font-size: 2.4rem;
+    				}
+				}
+			}
+		}
+	}
+}

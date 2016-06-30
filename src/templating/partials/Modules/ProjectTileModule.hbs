@@ -1,0 +1,21 @@
+<div class="{{tileLayout}}_cell tile {{#if offsetMargin}}offset_{{offsetMargin}}{{/if}}">
+	{{#if quote}}
+		<div class="quote-container">
+			<div class="content">
+				<div class="quote-content">
+					<blockquote>
+						"{{quote}}" <br>
+						<cite>- {{quoteAuthor}}</cite>
+					</blockquote>
+				</div>
+			</div>
+		</div>
+		{{else}}
+		<div class="square">
+			<div class="content">
+				{{#if projectImg}}<img src="{{projectImg}}" alt="">{{/if}}
+			</div>
+		</div>
+	{{/if}}
+	{{>ProjectDetailsModule}}
+</div>

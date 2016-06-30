@@ -1,0 +1,877 @@
+.Subpage {
+	.page-wrapper {
+		position: relative;
+		width: 100%;
+		height: 100%;
+	}
+
+	.grid-table {
+		height: 85rem;
+		width: 100%;
+		position: relative;
+		z-index: 1;
+
+		@include respond-to(bp-1280) {
+			height: 77rem;
+		}
+
+		@include respond-to(medium-screens) {
+			height: 68rem;
+		}
+
+		@include respond-to(bp-900) {
+			height: 60rem;
+		}
+
+		@include respond-to(bp-750) {
+			height: 35rem;
+		}
+
+		.col_l, .col_r {
+			height: 100%;
+			float: left;
+		}
+
+		.col_l {
+			background: url('/img/Mountain1.jpg') center no-repeat;
+			background-size: cover;
+			opacity: .25;
+			width: 25%;
+
+			@include respond-to(medium-screens){
+				width: 33.33%;
+			}
+
+			@include respond-to(bp-750){
+				width: 0;
+			}
+		}
+
+		.col_r {
+			width: 75%;
+
+			@include respond-to(medium-screens){
+				width: 66.66%;
+			}
+
+			@include respond-to(bp-750){
+				width: 100%;
+			}
+
+			.content {
+				padding: 15rem 11rem 0;
+
+				@include respond-to(medium-screens){
+					padding: 10rem 5rem 5rem;
+				}
+
+				@include respond-to(small-screens){
+					padding: 10rem 2rem 5rem;
+				}
+
+				.section_title {
+					@extend .good-headline;
+
+					font-size: 2rem;
+					text-transform: uppercase;
+					color: $color-lightgrey;
+					margin-bottom: 3rem;
+					font-weight: 500;
+
+					@include respond-to(medium-screens){
+						margin-bottom: 3rem;
+						font-size: 1.8rem;
+					}
+				}
+
+				.section_quote {
+					@include tiempos-semibold;
+
+					color: $color-black;
+					font-size: 5.8rem;
+					max-width: 85rem;
+					position: relative;
+
+					@include respond-to(medium-screens){
+						font-size: 5rem;
+					}
+
+					@include respond-to(bp-900) {
+						font-size: 4.2rem;
+					}
+
+					@include respond-to(bp-750) {
+						font-size: 4rem;
+					}
+
+					@include respond-to(bp-600) {
+						font-size: 3.4rem;
+					}
+
+					&:after {
+						position: absolute;
+						content: "";
+						width: 10%;
+						height: .3rem;
+						background: $color-red;
+						bottom: -3rem;
+						left: 0;
+
+						@include respond-to(bp-750){
+							bottom: -2rem;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// Team List
+	.team-section {
+		position: relative;
+		z-index: 2;
+
+		.team-list {
+			padding: 0;
+			list-style-type: none;
+			float: left;
+
+			@include respond-to(bp-750){
+				transform: translate(0, 0) !important;
+				margin-bottom: 0 !important;
+			}
+
+			.team-member {
+				background: $color-offoffwhite;
+				float: left;
+				width: 25%;
+				position: relative;
+
+				@include respond-to(medium-screens){
+					width: 33.33%;
+				}
+
+				@include respond-to(bp-750){
+					width: 50%;
+				}
+
+				@include respond-to(bp-600){
+					width: 100%;
+				}
+				
+				.name {
+					@include base-medium-transition;
+					@include transform3d(0,0,0);
+
+					padding: 3rem;
+					position: relative;
+					z-index: 3;
+					height: 50%;
+
+					@include respond-to(bp-1280){
+						padding: 3rem 2rem;
+					}
+				}
+
+				.specialty-notable {
+					position: absolute;
+					width: 100%;
+					bottom: 0;
+					padding: 1rem 2rem 2rem 3rem;
+					z-index: 3;
+
+					@include respond-to(bp-1280){
+						padding: 1rem 2rem 2rem 2rem;
+					}
+				}
+
+				&:nth-child(1) {
+					background: transparent;
+
+					@include respond-to(bp-750){
+						display: none;
+					}
+				}
+
+				&:nth-child(3n+3) {
+					background: $color-offwhite;
+				}
+
+				&.Partner {
+					background: $color-red;
+
+					.involvement {
+						color: $color-darkgrey;
+					}
+				}
+
+				&.Advisor {
+					background: $color-grey;
+
+					.specialty, .notable, .member-name {
+						color: $color-white;
+					}
+				}
+
+				&.Partner, &.Advisor, &.Member {
+					.quote-wrapper {
+						display: none;
+					}
+				}
+
+				&.Quote, &.Text {
+					width: 50%;
+					background: $color-white;
+
+					@include respond-to(medium-screens){
+						width: 66.66%;
+					}
+
+					@include respond-to(bp-750){
+						width: 100%;
+					}
+
+					.name, .specialty-notable {
+						display: none;
+					}
+
+					.quote-wrapper {
+						display: table;
+						width: 100%;
+						height: 100%;
+
+						.quote-content {
+							display: table-cell;
+							vertical-align: middle;
+
+							blockquote {
+								@include tiempos-medium-italic;
+
+								max-width: 48rem;
+								padding: 0 2rem;
+								margin: 0 auto;
+								font-size: 2.4rem;
+								line-height: 3.6rem;
+								position: relative;
+
+								&:before {
+									position: absolute;
+									content: "";
+									width: 10%;
+									height: .3rem;
+									background: $color-red;
+									top: -2rem;
+									left: 2rem;
+
+									@include respond-to(bp-750){
+										top: -1rem;
+									}
+								}
+
+								cite {
+									@extend .good-headline;
+
+									text-transform: uppercase;
+									font-size: 1.8rem;
+									font-style: normal;
+								}
+							}
+						}
+					}
+				}
+
+				.involvement {
+					@include base-medium-transition;
+					@extend .good-headline;
+
+					font-size: 2rem;
+					font-weight: 500;
+					color: $color-red;
+					text-transform: uppercase;
+					margin-bottom: 1rem;
+				}
+
+				.member-name  {
+					@include base-medium-transition;
+					@include tiempos-semibold;
+
+					color: $color-black;
+					font-size: 2.8rem;
+					margin: 0;
+				}
+
+				.specialty, .notable {
+					@include base-medium-transition;
+					@extend .source-sans-pro;
+
+					font-size: 1.4rem;
+					min-height: 3rem;
+					margin-bottom: 1rem;
+
+					@include respond-to(bp-1280){
+						font-size: 1.2rem;
+					}
+
+					@include respond-to(bp-600){
+						font-size: 1.4rem;
+					}
+				}
+
+				.member-profile-pic {
+					@include base-medium-transition;
+
+					position: absolute;
+					height: 100%;
+					width: 100%;
+					top: 0;
+					left: 0;
+					z-index: 2;
+					opacity: 0;
+
+					&:after {
+						position: absolute;
+						content: "";
+						width: 100%;
+						height: 65%;
+						bottom: 0;
+						left: 0;
+						/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+35,000000+100&0+35,0.5+100 */
+						background: -moz-linear-gradient(top,  rgba(0,0,0,0) 25%, rgba(0,0,0,0.8) 100%); /* FF3.6-15 */
+						background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 25%,rgba(0,0,0,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
+						background: linear-gradient(to bottom,  rgba(0,0,0,0) 25%,rgba(0,0,0,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+						filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */
+
+					}
+				}
+
+				.icon-link {
+					list-style-type: none;
+					margin: 0;
+					padding: 0;
+					overflow: hidden;
+
+					.social-icons {
+						float: left;
+						padding: 0 .6rem;
+
+						&:nth-child(1){
+							padding-left: 0;
+						}
+
+						.icon {
+							@include base-short-transition;
+
+							font-size: 1.4rem;
+							color: $color-grey;
+							opacity: .5;
+
+							&:hover {
+								opacity: 1;
+							}
+						}
+					}
+				}
+				
+				&.Advisor {
+					.icon-link {
+						.social-icons {
+							.icon {
+								color: $color-lightgrey;
+							}
+						}
+					}
+				}
+
+				&.Partner, &.Advisor, &.Member {
+					&.hover {
+						.name {
+							padding: 4rem 3rem 0;
+
+							@include respond-to(bp-1280){
+								padding: 2.5rem 2rem 1rem;
+							}
+
+							@include respond-to(medium-screens){
+								padding: 2.5rem 2rem 1rem;
+							}
+						}
+
+						.involvement, .experience_title, .specialty, .notable {
+							opacity: 0;
+						}
+
+						.member-name {
+							color: $color-white;
+						}
+
+						.member-profile-pic {
+							opacity: 1;
+						}
+
+						.icon-link {
+							.social-icons {
+								.icon {
+									color: $color-lightred;
+									opacity: .8;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// Projects List
+	.projects-list {
+		position: relative;
+		z-index: 2;	
+	}
+
+	.projects-list-wrapper {
+		width: 100%;
+		float: left;
+
+		@include respond-to(medium-screens){
+			transform: translate(0, 0) !important;
+			margin-bottom: 0 !important;
+		}
+
+		.projects-row-wrap {
+			width: 100%;
+			float: left;
+
+			@include respond-to(medium-screens){
+				&:nth-child(even){
+					.col_l {
+						float: right;
+
+						.four_cell {
+							@include respond-to(medium-screens){
+								margin-top: 0;
+							}
+						}
+					}
+				}
+			}
+
+			.col_l, .col_r {
+				float: left;
+				width: 50%;
+				overflow: hidden;
+
+				img {
+					max-width: 100%;
+					width: 100%;
+				}
+			}
+
+			.col_l {
+				@include respond-to(medium-screens){
+					width: 33.33%;
+				}
+
+				@include respond-to(bp-750){
+					width: 100%;
+				}
+
+				.one_cell {
+					@include respond-to(medium-screens){
+						width: 100%;
+					}
+				}
+
+				.four_cell {
+					@include respond-to(medium-screens){
+						margin-top: 100%;
+					}
+
+					@include respond-to(bp-750){
+						margin-top: 0;
+					}
+				}
+
+				.quote_cell {
+					@include respond-to(medium-screens){
+						display: none;
+					}
+
+					.quote-container {
+						@include respond-to(medium-screens){
+							padding-bottom: 100%;
+						}
+					}
+				}
+			}
+
+			.col_r {
+				@include respond-to(medium-screens){
+					width: 66.66%;
+				}
+
+				@include respond-to(bp-750){
+					width: 100%;
+				}
+
+				.one_cell {
+					@include respond-to(medium-screens){
+						width: 50%;
+					}
+				}
+			}
+
+			.offset_50 {
+				margin-left: 50%;
+
+				@include respond-to(medium-screens){
+					margin-left: 0;
+				}
+			}
+
+			.square {
+				height: 0;
+			    padding-bottom: 100%;
+			    position: relative;
+			    width: 100%;
+			}
+
+			.quote-container {
+				height: 0;
+				padding-bottom: 50%;
+				position: relative;
+				width: 100%;
+
+				.content {
+					display: table;
+				}
+
+				.quote-content {
+					display: table-cell;
+					vertical-align: middle;
+
+					blockquote {
+						@include tiempos-medium-italic;
+
+						max-width: 48rem;
+						padding: 0 2rem;
+						margin: 0 auto;
+						font-size: 2.4rem;
+						line-height: 3.6rem;
+						position: relative;
+
+						@include respond-to(bp-1280){
+							font-size: 2rem;
+							line-height: 3.2rem;
+						}
+
+						@include respond-to(bp-750){
+							font-size: 2.6rem;
+							line-height: 4rem;
+							max-width: 50rem;
+						}
+
+						@include respond-to(small-screens){
+							font-size: 2rem;
+							line-height: 3.2rem;
+						}
+
+						@include respond-to(small-screens){
+							font-size: 1.8rem;
+							line-height: 2.8rem;
+						}
+
+						&:before {
+							position: absolute;
+							content: "";
+							width: 10%;
+							height: .3rem;
+							background: $color-red;
+							top: -2rem;
+							left: 2rem;
+
+							@include respond-to(bp-750){
+								top: 0rem;
+							}
+						}
+
+						cite {
+							@extend .good-headline;
+
+							text-transform: uppercase;
+							font-size: 1.8rem;
+							font-style: normal;
+						}
+					}
+				}
+
+			}
+
+			.content {
+		    	position: absolute;
+			    top: 0;
+			    left: 0;
+			    width: 100%;
+			    height: 100%;
+		    }
+
+			.tile {
+				position: relative;
+				float: left;
+				overflow: hidden;
+
+				&.hover {
+					.project-detail-wrapper {
+						.details-content {
+							@include transform3d(0,0,0);
+
+							opacity: 1;
+
+							.project-name {
+								@include transform3d(0,0,0);
+								@include delay(.5s);
+
+								opacity: 1;
+							}
+
+							.project-details {
+								@include transform3d(0,0,0);
+								@include delay(.7s);
+
+								opacity: 1;
+							}
+						}
+
+						.background-color {
+							opacity: 1;
+						}
+					}
+				}
+
+				&.quote_cell {
+					.project-detail-wrapper {
+						display: none;
+					}
+				}
+
+				.project-detail-wrapper {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					padding: 3rem 3rem 1rem;
+					color: $color-white;
+
+					@include respond-to(medium-screens){
+						padding: 2rem;
+					}
+
+					@include respond-to(small-screens){
+						padding: 3rem;
+					}
+
+					.details-content {
+						@include base-medium-transition;
+						@include transform3d(0,50%,0);
+
+						position: relative;
+						width: 100%;
+						height: 100%;
+						z-index: 2;
+					}
+
+					.background-color {
+						@include base-medium-transition;
+
+						position: absolute;
+						height: 100%;
+						width: 100%;
+						top: 0;
+						left: 0;
+						z-index: 1;
+						opacity: 0;
+					}
+
+					.project-name {
+						@include transform3d(0,10rem,0);
+						@include base-medium-transition;
+
+						opacity: 0;
+
+						.h3 {
+							@include tiempos-semibold;
+							
+							font-size: 2.8rem;
+							margin: 0;
+						}
+					}
+
+					.project-details {
+						@include transform3d(0,10rem,0);
+						@include base-medium-transition;
+
+						position: absolute;
+						bottom: 2.8rem;
+						opacity: 0;
+
+						@include respond-to(small-screens){
+							bottom: 1.4rem;
+						}
+
+						&:before {
+							position: absolute;
+							content: "";
+							width: 10%;
+							height: .3rem;
+							background: $color-red;
+							top: -1rem;
+							left: 0;
+						}
+
+						p {
+							color: $color-white;
+							margin-bottom: 1rem;
+						}
+					}
+				}
+
+				&.four_cell {
+					.project-detail-wrapper {
+						padding: 5rem;
+
+						@include respond-to(medium-screens){
+							padding: 3rem;
+						}
+
+						.project-details {
+							bottom: 5rem;
+
+							@include respond-to(small-screens){
+								bottom: 1.4rem;
+							}
+						}
+					}
+				}
+			}
+
+			.blank_cell {
+				width: 50%;
+			}
+
+			.one_cell {
+				width: 50%;
+			}
+
+			.four_cell {
+				width: 100%;
+			}
+
+			.quote_cell {
+				width: 100%;
+			}
+		}
+	}
+
+	&.Purpose {
+		.page-wrapper {
+			padding: 7rem 0 0;
+		}
+
+		.content-area {
+			padding: 3rem 0;
+			width: 100%;
+			padding-left: 25%;
+
+			@include respond-to(medium-screens) {
+				padding: 0;
+			}
+
+			.content {
+				padding: 4rem 2rem 4rem 0;
+				max-width: 78rem;
+
+				@include respond-to(medium-screens) {
+					margin: 0 auto;
+					padding: 4rem 3rem;
+				}
+
+				.h3 {
+				    font-family: 'Tiempos-Medium';
+				    font-size: 3rem;
+				    line-height: 4.8rem;
+				    margin-bottom: 2rem;
+
+					@include respond-to(medium-screens){
+						margin-bottom: 1.8rem;
+						line-height: 4rem;
+						font-size: 2.4rem;
+					}
+
+					@include respond-to(small-screens){
+						margin-bottom: 1.4rem;
+						line-height: 3.4rem;
+						font-size: 1.8rem;
+					}
+				}
+			}
+
+			.section_title {
+				@extend .good-headline;
+
+				font-size: 2rem;
+				text-transform: uppercase;
+				color: $color-lightgrey;
+				margin-bottom: 3rem;
+				font-weight: 500;
+
+				@include respond-to(medium-screens){
+					margin-bottom: 3rem;
+					font-size: 1.8rem;
+				}
+			}
+
+			.section_quote {
+				@include tiempos-semibold;
+
+				color: $color-black;
+				font-size: 5.8rem;
+				max-width: 85rem;
+				position: relative;
+
+				@include respond-to(medium-screens){
+					font-size: 5rem;
+				}
+
+				@include respond-to(bp-900) {
+					font-size: 4.2rem;
+				}
+
+				@include respond-to(bp-750) {
+					font-size: 4rem;
+				}
+
+				@include respond-to(bp-600) {
+					font-size: 3rem;
+				}
+
+				&:after {
+					position: absolute;
+					content: "";
+					width: 10%;
+					height: .3rem;
+					background: $color-red;
+					bottom: -3rem;
+					left: 0;
+
+					@include respond-to(bp-750){
+						bottom: -2rem;
+					}
+				}
+			}
+
+			&:nth-child(even) {
+				background-color: $color-offoffwhite;
+			}
+		}
+	}
+}

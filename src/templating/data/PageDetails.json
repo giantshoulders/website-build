@@ -1,0 +1,239 @@
+{
+	"Description": {
+		"title": "Giant Shoulders",
+		"subtitle": "We are a creative collective of dreamers and doers.",
+		"mobile-logo": "/img/svg/gs_mobile-logo.svg",
+		"copyright": "© 2016 | Giant Shoulders &amp; Co"
+	},
+
+	"Navigation": {
+		"people": {
+			"name": "People",
+			"title": "Select to go to People page",
+			"link": "/people"
+		},
+		"process": {
+			"name": "Projects",
+			"title": "Select to go to Projects page",
+			"link": "/projects"
+		},
+		"projects": {
+			"name": "Purpose",
+			"title": "Select to go to Purpose page",
+			"link": "/purpose"
+		},
+		"purpose": {
+			"name": "Contact",
+			"title": "Select to Contact us",
+			"link": "#",
+			"mobileLink" : "hello@giantshoulders.co"
+		}
+	},
+
+	"Intro": {
+		"what": {
+			"sectionTitle": "What We Believe",
+			"quote": "The future will be&nbsp;built&nbsp;on <u>creativity</u> and <u>collaboration</u>."
+		},
+		"believe": {
+			"sectionTitle": "What We Offer",
+			"quote": "Three things. <br><u>Purpose.</u> <u>Experience.</u> and <u>Change.</u>"
+		},
+		"offer": {
+			"sectionTitle": "Where We Work",
+			"quote": "At the intersection of&nbsp;<u>Technology</u>, <u>Design</u> and <u>Business.</u>"
+		},
+		"who": {
+			"sectionTitle": "Who We Are",
+			"quote": "We are a <u>creative</u> <u>collective</u> of thinkers and makers."
+		}
+	},
+
+	"OurStory": [
+		"We've come together to build a company that is greater than each one of us. Sir Isaac Newton once said, \"<em>If I have seen further than others, it is by standing upon the shoulders of giants.</em>\"",
+		"We are inspired by giants who came before us, and together we aspire to become a giant helping others see further &mdash; explore beyond known boundaries and seek new horizons."
+	],
+
+	"ThisWeBelieve": {
+		"sectionTitle": "This We Believe",
+		"content": "When <em><u>people</u></em> with their individual aspirations and talents come together to build upon each other's <em><u>work</u></em>, we find new ways forward. Following a <em><u>purpose</u></em> beyond profit, we are driven towards greater good."
+	},
+
+	"PeoplePage": {
+		"title": "We The People",
+		"quote": "Collective Minds.<br>Connected Hearts."
+	},
+
+	"ProjectsPage": {
+		"title": "Projects Thus Far",
+		"quote": "Big Dreams.<br>Small Beginnings."
+	},
+
+	"PurposePage": {
+		"title": "Our Manifesto",
+		"quote": "This we believe."
+	},
+
+	"ProjectsList" : {
+		"rowOne": {
+			"col_l": {
+				"01": {
+					"projectName": "Vibe Group",
+					"discipline": "Brand Identity and Website Design &amp; Dev",
+					"talent": "Gunther Koo and Pramod Maharana",
+					"hexColor": "1D1E23",
+					"tileLayout": "one",
+					"offsetMargin": "50",
+					"projectImg": "../img/projects/assets/01-Vibe_Group.svg"
+				},
+				"02": {
+					"projectName": "Smithsonian",
+					"discipline": "Print Design",
+					"talent": "Nina and James Lavine",
+					"hexColor": "694685",
+					"tileLayout": "four",
+					"projectImg": "../img/projects/assets/03-Simthsonian.jpg"
+				}
+			},
+			"col_r": {
+				"01": {
+					"projectName": "Hatch",
+					"discipline": "Strategy, UI/UX, Branding, Web Design",
+					"talent": "Lauren Sun, Hanford Lemoore, Bob Berger, Tino Chow",
+					"hexColor": "00B2A1",
+					"tileLayout": "four",
+					"projectImg": "../img/projects/assets/02-HatchMessagingApp.jpg"
+				},
+				"02": {
+					"tileLayout": "quote",
+					"quote": "Good design begins with honesty, asks tough questions, comes from collaboration and from trusting your intuition.",
+					"quoteAuthor": "Freeman Thomas"
+				}
+			}
+		},
+		"rowTwo": {
+			"col_l": {
+				"01": {
+					"projectName": "Landstorm",
+					"discipline": "Brand Identity and Website Design",
+					"talent": "Lauren Sun",
+					"hexColor": "589374",
+					"tileLayout": "one",
+					"projectImg": "../img/projects/assets/04-Landstorm.jpg"
+				},
+				"02": {
+					"projectName": "Non-Profit Jams",
+					"discipline": "Community Organizing",
+					"talent": "Tino Chow",
+					"hexColor": "1D1E23",
+					"tileLayout": "one",
+					"projectImg": "../img/projects/assets/05-Non-ProfitJams.jpg"
+				},
+				"03": {
+					"projectName": "Waterfire",
+					"discipline": "Illustration, Web Design & Dev, Community Organizing",
+					"talent": "Nina Lavine, James Lavine, Tino Chow",
+					"hexColor": "393B42",
+					"tileLayout": "four",
+					"projectImg": "../img/projects/assets/07-Waterfire.jpg"
+				}
+			},
+			"col_r": {
+				"01": {
+					"projectName": "RISD CE",
+					"discipline": "UI/UX, Full Stack Development, Design Research",
+					"talent": "Tino Chow",
+					"hexColor": "B70202",
+					"tileLayout": "four",
+					"projectImg": "../img/projects/assets/06-RISD-CE.jpg"
+				},
+				"02": {
+					"projectName": "Start-Up Pitch Events",
+					"discipline": "Community Organizing, Event Planning, Mentoring",
+					"talent": "Tino Chow, Neil Brown, David Barnum",
+					"hexColor": "1D1E23",
+					"tileLayout": "one",
+					"projectImg": "../img/projects/assets/08-StartUp-PitchEvents.jpg"
+				},
+				"03": {
+					"projectName": "Black Hjerte",
+					"discipline": "Brand Identity and Packaging Design",
+					"talent": "Will Denton",
+					"hexColor": "393B42",
+					"tileLayout": "one",
+					"projectImg": "../img/projects/assets/09-BlackHjerteKoffee.svg"
+				}
+			}
+		},
+		"rowThree": {
+			"col_l": {
+				"01": {
+					"tileLayout": "quote",
+					"quote": "Good design begins with honesty, asks tough questions, comes from collaboration and from trusting your intuition.",
+					"quoteAuthor": "Freeman Thomas"
+				},
+				"02": {
+					"projectName": "Mixtura",
+					"discipline": "UI/UX, Design, Branding",
+					"talent": "Liz Collins",
+					"hexColor": "B70202",
+					"tileLayout": "one",
+					"projectImg": "../img/projects/assets/14-Mixtura.jpg"
+				},
+				"03": {
+					"projectName": "Seven Oxen",
+					"discipline": "Brand Identity and Packaging Concepts",
+					"talent": "Lauren Sun",
+					"hexColor": "1D1E23",
+					"tileLayout": "one",
+					"projectImg": "../img/projects/assets/15-SevenOxen.jpg"
+				}
+			},
+			"col_r": {
+				"01": {
+					"projectName": "Mayo Clinic",
+					"discipline": "Design Research, Workshops, Community Programming",
+					"talent": "Tino Chow",
+					"hexColor": "820940",
+					"tileLayout": "four",
+					"projectImg": "../img/projects/assets/10-MayoClinic.jpg"
+				}
+			}
+		},
+		"rowFour": {
+			"col_l": {
+				"01": {
+					"projectName": "Better World By Design",
+					"discipline": "Community Organizing, Fundrasing, Succession Plan",
+					"talent": "Tino Chow",
+					"hexColor": "151519",
+					"tileLayout": "four",
+					"projectImg": "../img/projects/assets/11-BetterWorldByDesign.jpg"
+				}
+			},
+			"col_r": {
+				"01": {
+					"tileLayout": "quote",
+					"quote": "Good design begins with honesty, asks tough questions, comes from collaboration and from trusting your intuition.",
+					"quoteAuthor": "Freeman Thomas"
+				},
+				"02": {
+					"projectName": "Ellman Family Vineyards",
+					"discipline": "Brand Identity and Packaging Design",
+					"talent": "Pramod Maharana and Christopher Williams",
+					"hexColor": "393B42",
+					"tileLayout": "one",
+					"projectImg": "../img/projects/assets/12-EllmanFamilyVineyards.jpg"
+				},
+				"03": {
+					"projectName": "Pixbi",
+					"discipline": "UI/UX, Design, Front End Development",
+					"talent": "Gunther Koo",
+					"hexColor": "007FBF",
+					"tileLayout": "one",
+					"projectImg": "../img/projects/assets/13-Pixbi.jpg"
+				}
+			}
+		}
+	}
+}

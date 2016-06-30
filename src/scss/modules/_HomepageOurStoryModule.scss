@@ -1,0 +1,140 @@
+.our-story_section {
+
+	.col_l {
+		background: url('/img/SirIssacNewton.jpg') center no-repeat;
+		background-size: cover;
+
+		@include respond-to(bp-750) {
+			width: 0;
+		}
+	}
+
+	.col_r {
+		background-color: $color-red;
+
+		@include respond-to(bp-750) {
+			width: 100%;
+		}
+
+		.story-content {
+			position: relative;
+			display: table;
+			height: 100%;
+			width: 100%;
+
+			@include respond-to(bp-750) {
+				padding: 10rem 0;
+			}
+
+			.content {
+				display: table-cell;
+				vertical-align: middle;
+				max-width: 96rem;
+			}
+
+			.h3 {
+				@include tiempos-medium;
+
+				font-size: 3rem;
+				color: $color-white;
+				margin-bottom: 3.2rem;
+				padding-left: 10rem;
+				padding-right: 2rem;
+				line-height: 150%;
+				max-width: 80rem;
+
+				@include respond-to(medium-screens) {
+					padding-left: 4rem;
+					font-size: 2.8rem;
+				}
+
+				@include respond-to(small-screens) {
+					font-size: 2.4rem;
+					padding-right: 4rem;
+				}
+
+				em {
+					@include tiempos-medium;
+				}
+
+				&.bar {
+					position: relative;
+
+					&:before {
+						content: "";
+						position: absolute;
+						width: 5%;
+						height: .5rem;
+						top: -5rem;
+						left: 10rem;
+						background-color: $color-black;
+
+						@include respond-to(medium-screens) {
+							left: 4rem;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.this-we-believe {
+	@include respond-to(bp-750) {
+		padding: 5rem 0;
+	}
+	@include respond-to(small-screens) {
+		padding: 7rem 0;
+	}
+
+	.content {
+		display: table-cell;
+		vertical-align: middle;
+
+		.section_title {
+			@extend .good-headline;
+
+			font-size: 2rem;
+			text-transform: uppercase;
+			color: $color-grey;
+			font-weight: 500;
+			max-width: 108rem;
+			padding: 0 4rem;
+			margin: 0 auto 5rem;
+
+			@include respond-to(medium-screens) {
+				max-width: 80rem;
+				font-size: 1.8rem;
+			}
+
+			@include respond-to(small-screens) {
+				font-size: 1.6rem;
+			}
+		}
+
+		.h3 {
+			@include tiempos-semibold;
+
+			color: $color-black;
+			font-size: 5.2rem;
+			max-width: 108rem;
+			padding: 0 4rem;
+			margin: 0 auto;
+
+			@include respond-to(medium-screens) {
+				max-width: 80rem;
+				font-size: 4.2rem;
+			}
+
+			@include respond-to(small-screens) {
+				font-size: 3.4rem;
+			}
+
+			u {
+				@include tiempos-semibold;
+
+				color: $color-red;
+			}
+		}
+	}
+}

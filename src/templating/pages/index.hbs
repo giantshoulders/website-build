@@ -1,0 +1,54 @@
+---
+bodyClass: Homepage
+---
+<div class="main-wrapper">
+	<div class="intro_section grid_table">
+		<div class="col_tr">
+			<div class="col_l"></div>
+			<div class="col_r">
+				<div class="background-pattern">
+					<div class="pattern"></div>
+				</div>
+
+				{{>IntroContentModule}}
+
+			</div>
+		</div>
+	</div>
+</div>
+<div class="main-wrapper section-wrapper">
+	<div class="our-story_section grid_table">
+		<div class="col_tr">
+			<div class="col_l"></div>
+			<div class="col_r">
+				<div class="story-content">
+					<div class="content">
+						<h2 class="h3 bar">
+							{{{PageDetails.OurStory.[0]}}}
+						</h2>
+						<h2 class="h3">
+							{{{PageDetails.OurStory.[1]}}}
+						</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="main-wrapper section-wrapper">
+	<div class="this-we-believe grid_table">
+		<div class="col_tr">
+			<div class="content">
+				<h1 class="h1 section_title">
+					{{PageDetails.ThisWeBelieve.sectionTitle}}
+				</h1>
+				<h2 class="h3">
+					{{{PageDetails.ThisWeBelieve.content}}}
+				</h2>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+{{>FooterModule Homepage=true}}

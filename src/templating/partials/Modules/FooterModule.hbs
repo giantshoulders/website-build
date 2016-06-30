@@ -1,0 +1,68 @@
+<div class="main-wrapper section-wrapper">
+	<div class="{{#if PeoplePage}}peoplepage_{{else}}{{#if ProjectsPage}}projectspage_{{else}}{{#if PurposePage}}purposepage_{{else}}homepage_{{/if}}{{/if}}{{/if}}footer grid_table form-wrapper">
+		<div class="content">
+			{{#if PeoplePage}}
+				<div class="quote-wrapper">
+					<div class="quote-content">
+						<blockquote>
+							"There are many who dream of a better tomorrow, but the future is written by those who dare to make it happen."<br>
+							<cite>- Bob Berger</cite>
+						</blockquote>
+					</div>
+				</div>
+				{{else}}
+				{{#if ProjectsPage}}
+					{{else}}
+					{{#if PurposePage}}
+						{{else}}
+						<div class="col_tr">
+							<div class="col_l">
+								<div class="form-content">
+									<h4 class="h4">
+										We're here to listen. <br> Questions? Comments? Just&nbsp;Curious?
+									</h4>
+									<div class="business-inquires">
+										<h5 class="h5">
+											Business Inquries
+										</h5>
+										<h5 class="h4">
+											401 648 5908
+										</h5>
+										<p class="copyright">
+											{{{PageDetails.Description.copyright}}}
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="col_r">
+								{{>FormModule}}
+							</div>
+						</div>
+					{{/if}}
+				{{/if}}
+			{{/if}}
+		</div>
+	</div>
+	{{#unless Homepage}}
+		<div class="gs-footer">
+			<div class="col_tr">
+				<div class="col_l">
+					<div class="content">
+						<div class="gs-logo">
+							<a href="/" class="logo-link">
+								<img src="{{PageDetails.Description.mobile-logo}}" alt="" class="mobile-logo">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col_r">
+					<div class="content">
+						<p class="copyright">
+							{{{PageDetails.Description.copyright}}}
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	{{/unless}}
+</div>

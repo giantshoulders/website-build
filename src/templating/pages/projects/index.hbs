@@ -1,0 +1,26 @@
+---
+bodyClass: Projects Subpage
+---
+<div class="page-wrapper">
+	<div class="projects-intro_section grid-table cf">
+		<div class="col_l"></div>
+		<div class="col_r">
+			<div class="content">
+				<h1 class="h3 section_title">
+					{{PageDetails.ProjectsPage.title}}
+				</h1>
+				<h2 class="h2 section_quote">
+					{{{PageDetails.ProjectsPage.quote}}}
+				</h2>
+			</div>
+		</div>
+	</div>
+	<div class="projects-list">
+		<div class="projects-list-wrapper">
+			{{#each PageDetails.ProjectsList}}
+				{{>ProjectListRowModule}}
+			{{/each}}
+		</div>
+	</div>
+	{{>FooterModule ProjectsPage=true}}
+</div>
