@@ -622,21 +622,15 @@
 				&.hover {
 					.project-detail-wrapper {
 						.details-content {
-							@include transform3d(0,0,0);
+							@include transform3d(0,0,0)
 
 							opacity: 1;
 
 							.project-name {
-								@include transform3d(0,0,0);
-								@include delay(.5s);
-
 								opacity: 1;
 							}
 
 							.project-details {
-								@include transform3d(0,0,0);
-								@include delay(.7s);
-
 								opacity: 1;
 							}
 						}
@@ -672,7 +666,6 @@
 
 					.details-content {
 						@include base-medium-transition;
-						@include transform3d(0,50%,0);
 
 						position: relative;
 						width: 100%;
@@ -693,7 +686,6 @@
 					}
 
 					.project-name {
-						@include transform3d(0,10rem,0);
 						@include base-medium-transition;
 
 						opacity: 0;
@@ -707,7 +699,6 @@
 					}
 
 					.project-details {
-						@include transform3d(0,10rem,0);
 						@include base-medium-transition;
 
 						position: absolute;
@@ -731,6 +722,34 @@
 						p {
 							color: $color-white;
 							margin-bottom: 1rem;
+						}
+
+						.view-project-link {
+							@extend .source-sans-pro;
+
+							color: $color-white;
+							font-size: 1.4rem;
+							font-weight: 900;
+							position: relative;
+
+							&:after {
+								@include base-medium-transition;
+								@include background-opacity($color-white, .5);
+
+								content: "";
+								width: 0%;
+								position: absolute;
+								bottom: -1rem;
+								left: 0;
+								height: .2rem;
+							}
+
+							&:hover {
+								&:after {
+									width: 100%;
+								}
+							}
+
 						}
 					}
 				}

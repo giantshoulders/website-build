@@ -14,11 +14,13 @@
 				<strong>Talent</strong>: <br>
 				{{{talent}}}
 			</p>
-			{{!-- <div class="view-project">
-				<a href="{{projectLink}}" class="view-project-link">
+			{{#if projectLink}}
+			<div class="view-project">
+				<a href="{{projectLink}}" target="_blank" class="view-project-link">
 					View Project
 				</a>
-			</div> --}}
+			</div>
+			{{/if}}
 		</div>
 	</div>
 	<div class="background-color" style="background-color: #{{hexColor}};"></div>

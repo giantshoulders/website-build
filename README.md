@@ -1,6 +1,6 @@
 # Giantshoulders.co Website Build
 
-<!-- Current version="0.0.2-1" -->
+<!-- Current version="0.0.2-34" -->
 
 ## Requirements For Frontend Development
 

@@ -11,7 +11,7 @@
 		width: 25%;
 		height: 100%;
 		float: left;
-		background: $color-white;
+		background: #d8d8d8;
 		display: table;
 
 		@include respond-to(medium-screens) {

@@ -146,6 +146,25 @@
 
 		height: 75%;
 		min-height: 51rem;
+	}
+
+	&.projectspage_footer {
+		background: url('../img/projects/Iceberg-Image.jpg') left top no-repeat;
+		background-size: cover;
+
+		height: 75%;
+		min-height: 51rem;
+	}
+
+	&.purposepage_footer {
+		height: 0;
+
+		.main-wrapper & {
+			height: 0;
+		}
+	}
+
+	&.peoplepage_footer, &.projectspage_footer {		
 
 		.content {
 			.quote-wrapper {
@@ -197,22 +216,6 @@
 					}
 				}
 			}
-		}
-	}
-
-	&.projectspage_footer {
-		background: url('../img/projects/Iceberg-Image.jpg') left top no-repeat;
-		background-size: cover;
-
-		height: 75%;
-		min-height: 51rem;
-	}
-
-	&.purposepage_footer {
-		height: 0;
-
-		.main-wrapper & {
-			height: 0;
 		}
 	}
 }

@@ -80,7 +80,7 @@
 				"01": {
 					"projectName": "Vibe Group",
 					"discipline": "Brand Identity and Website Design &amp; Dev",
-					"talent": "Gunther Koo and Pramod Maharana",
+					"talent": "Neil Brown, Pramod Maharana, Chris Williams, Gunther Koo and Tino Chow",
 					"hexColor": "1D1E23",
 					"tileLayout": "one",
 					"offsetMargin": "50",
@@ -98,7 +98,7 @@
 			"col_r": {
 				"01": {
 					"projectName": "Hatch",
-					"discipline": "Strategy, UI/UX, Branding, Web Design",
+					"discipline": "UI/UX, Branding, Web Design",
 					"talent": "Lauren Sun, Hanford Lemoore, Bob Berger, Tino Chow",
 					"hexColor": "00B2A1",
 					"tileLayout": "four",
@@ -119,7 +119,8 @@
 					"talent": "Lauren Sun",
 					"hexColor": "589374",
 					"tileLayout": "one",
-					"projectImg": "../img/projects/assets/04-Landstorm.jpg"
+					"projectImg": "../img/projects/assets/04-Landstorm.jpg",
+					"projectLink": "http://laurensun.com/landstrom/"
 				},
 				"02": {
 					"projectName": "Non-Profit Jams",
@@ -131,21 +132,23 @@
 				},
 				"03": {
 					"projectName": "Waterfire",
-					"discipline": "Illustration, Web Design & Dev, Community Organizing",
-					"talent": "Nina Lavine, James Lavine, Tino Chow",
+					"discipline": "Illustration, Web Design and Development, Community Organizing",
+					"talent": "Nina Lavine, James Lavine and Tino Chow",
 					"hexColor": "393B42",
 					"tileLayout": "four",
-					"projectImg": "../img/projects/assets/07-Waterfire.jpg"
+					"projectImg": "../img/projects/assets/07-Waterfire.jpg",
+					"projectLink": "http://www.tinochow.com/gaspee"
 				}
 			},
 			"col_r": {
 				"01": {
-					"projectName": "RISD CE",
-					"discipline": "UI/UX, Full Stack Development, Design Research",
+					"projectName": "RISD CE Website",
+					"discipline": "Information Architecture, Website Design, Full Stack Development",
 					"talent": "Tino Chow",
 					"hexColor": "B70202",
 					"tileLayout": "four",
-					"projectImg": "../img/projects/assets/06-RISD-CE.jpg"
+					"projectImg": "../img/projects/assets/06-RISD-CE.jpg",
+					"projectLink": "http://www.tinochow.com/risdce"
 				},
 				"02": {
 					"projectName": "Start-Up Pitch Events",
@@ -157,7 +160,7 @@
 				},
 				"03": {
 					"projectName": "Black Hjerte",
-					"discipline": "Brand Identity and Packaging Design",
+					"discipline": "Brand, Design, Packaging",
 					"talent": "Will Denton",
 					"hexColor": "393B42",
 					"tileLayout": "one",
@@ -169,8 +172,8 @@
 			"col_l": {
 				"01": {
 					"tileLayout": "quote",
-					"quote": "Good design begins with honesty, asks tough questions, comes from collaboration and from trusting your intuition.",
-					"quoteAuthor": "Freeman Thomas"
+					"quote": "Efficiency is doing things right; effectiveness is doing the right things.",
+					"quoteAuthor": "Peter Drucker"
 				},
 				"02": {
 					"projectName": "Mixtura",
@@ -178,11 +181,12 @@
 					"talent": "Liz Collins",
 					"hexColor": "B70202",
 					"tileLayout": "one",
-					"projectImg": "../img/projects/assets/14-Mixtura.jpg"
+					"projectImg": "../img/projects/assets/14-Mixtura.jpg",
+					"projectLink": "http://www.mixturaapp.com/"
 				},
 				"03": {
-					"projectName": "Seven Oxen",
-					"discipline": "Brand Identity and Packaging Concepts",
+					"projectName": "Seven Oxen Estate Wines",
+					"discipline": "Branding, Packaging Concepts",
 					"talent": "Lauren Sun",
 					"hexColor": "1D1E23",
 					"tileLayout": "one",
@@ -196,7 +200,8 @@
 					"talent": "Tino Chow",
 					"hexColor": "820940",
 					"tileLayout": "four",
-					"projectImg": "../img/projects/assets/10-MayoClinic.jpg"
+					"projectImg": "../img/projects/assets/10-MayoClinic.jpg",
+					"projectLink": "http://www.tinochow.com/mayo-clinic-community-health"
 				}
 			}
 		},
@@ -208,30 +213,32 @@
 					"talent": "Tino Chow",
 					"hexColor": "151519",
 					"tileLayout": "four",
-					"projectImg": "../img/projects/assets/11-BetterWorldByDesign.jpg"
+					"projectImg": "../img/projects/assets/11-BetterWorldByDesign.jpg",
+					"projectLink": "http://www.tinochow.com/better-world-by-design"
 				}
 			},
 			"col_r": {
 				"01": {
 					"tileLayout": "quote",
-					"quote": "Good design begins with honesty, asks tough questions, comes from collaboration and from trusting your intuition.",
-					"quoteAuthor": "Freeman Thomas"
+					"quote": "Simplicity is not the goal. It is the by-product of a good idea and modest expectations.",
+					"quoteAuthor": "Paul Rand"
 				},
 				"02": {
 					"projectName": "Ellman Family Vineyards",
-					"discipline": "Brand Identity and Packaging Design",
-					"talent": "Pramod Maharana and Christopher Williams",
+					"discipline": "Brand, Packaging, Web Design and Development",
+					"talent": "Pramod Maharana, David Barnum, Tino Chow, Neil Brown, Hannah Taddeo, Chris Williams, Gunther Koo",
 					"hexColor": "393B42",
 					"tileLayout": "one",
 					"projectImg": "../img/projects/assets/12-EllmanFamilyVineyards.jpg"
 				},
 				"03": {
 					"projectName": "Pixbi",
-					"discipline": "UI/UX, Design, Front End Development",
+					"discipline": "Branding, UI/UX, Design, Front End Development",
 					"talent": "Gunther Koo",
 					"hexColor": "007FBF",
 					"tileLayout": "one",
-					"projectImg": "../img/projects/assets/13-Pixbi.jpg"
+					"projectImg": "../img/projects/assets/13-Pixbi.jpg",
+					"projectLink": "http://guntherkoo.com/pixbi/"
 				}
 			}
 		}

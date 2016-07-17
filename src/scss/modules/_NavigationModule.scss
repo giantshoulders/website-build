@@ -155,12 +155,8 @@
 			color: $color-white;
 			display: block;
 
-			@include respond-to(medium-screens) {
-				font-size: 3.2rem;
-			}
-
-			@include respond-to(bp-800) {
-				font-size: 2.8rem;
+			.main-logo {
+				max-width: 80%;
 			}
 
 			@include respond-to(bp-750) {

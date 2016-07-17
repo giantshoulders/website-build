@@ -31,12 +31,12 @@ export default (function getTeamAPI(){
 		var entry = data.feed.entry,
 			count = entry.length;
 
-			// console.log(entry);
+			console.log(count);
 
 		$(entry).each(function(){
 		// Column names are name, age, etc.
 			$('.team-list').append(
-				'<li class="team-member '+this.gsx$involvement.$t+'"><div class="name"><h2 class="member-name">' + this.gsx$name.$t + '</h2></div><div class="specialty-notable"><h3 class="h5 involvement">' + this.gsx$involvement.$t + '</h3><p class="specialty"><strong>Expertise</strong>: '+this.gsx$skillsetspecialty1.$t+', '+this.gsx$skillsetspecialty2.$t+', '+this.gsx$skillsetspecialty3.$t+'</p><p class="notable"><strong>Experience</strong>: '+this.gsx$notableclientorkeyemployment1.$t+', '+this.gsx$notableclientorkeyemployment2.$t+', '+this.gsx$notableclientorkeyemployment3.$t+'</p><ul class="icon-link"><li class="social-icons"><a href="http://'+this.gsx$personalconsultingwebsite.$t+'" target="_blank" class="icon weblink-link"><span class="icon-icon-weblink"></span></a></li><li class="social-icons"><a href="http://'+this.gsx$linkedinlink.$t+'" target="_blank" class="icon linkedin-link"><span class="icon-icon-linkedin"></span></a></li><li class="social-icons"><a href="http://'+this.gsx$twitterlink.$t+'" target="_blank" class="icon twitter-link"><span class="icon-icon-twitter"></span></a></li></ul></div><div class="member-profile-pic" style="background: url(../img/team/'+this.gsx$biopic.$t+'.jpg) center no-repeat;background-size: cover;"></div><div class="quote-wrapper"><div class="quote-content"><blockquote>"'+this.gsx$quote.$t+'" <br><cite>- '+this.gsx$quoteauthor.$t+'</cite></blockquote></div></div></li>'
+				'<li class="team-member '+this.gsx$involvement.$t+'"><div class="name"><h2 class="member-name">' + this.gsx$name.$t + '</h2></div><div class="specialty-notable"><h3 class="h5 involvement">' + this.gsx$involvement.$t + '</h3><p class="specialty"><strong>Expertise</strong>: '+this.gsx$skillsetspecialty1.$t+', '+this.gsx$skillsetspecialty2.$t+', '+this.gsx$skillsetspecialty3.$t+'</p><p class="notable"><strong>Experience</strong>: '+this.gsx$notableclientorkeyemployment1.$t+', '+this.gsx$notableclientorkeyemployment2.$t+', '+this.gsx$notableclientorkeyemployment3.$t+'</p></div><div class="member-profile-pic" style="background: url(../img/team/'+this.gsx$biopic.$t+'.jpg) center no-repeat;background-size: cover;"></div><div class="quote-wrapper"><div class="quote-content"><blockquote>"'+this.gsx$quote.$t+'" <br><cite>- '+this.gsx$quoteauthor.$t+'</cite></blockquote></div></div></li>'
 			);
 
 			if (!--count) {
